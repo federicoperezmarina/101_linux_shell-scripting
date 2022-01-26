@@ -23,10 +23,13 @@ docker run -ti ubuntu /bin/bash
 ### System
 Now we are going to learn some commands of linux system
 
-#### uname command
+#### Table of Contents
+
+* [uname](#uname)
+
+#### uname
  Displays  Linux system information
 ```sh
 $ uname
-#output
 Linux
 ```

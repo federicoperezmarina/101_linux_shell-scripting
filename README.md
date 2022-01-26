@@ -19,8 +19,11 @@ docker pull ubuntu:latest
 #access into ubuntu
 docker run -ti ubuntu /bin/bash
 ```
+### 
+* [System commands](#system-commands)
+* [Hardware commands](#hardware-commands)
 
-### System
+### System commands
 Now we are going to learn some commands of linux system
 
 * [uname](#uname)
@@ -78,4 +81,41 @@ Displays who you are logged in as
 ```sh
 $ whoami
 root
+```
+
+### Hardware commands
+
+* [cat /proc/cpuinfo](#cat--proc--cpuinfo)
+* [cat /proc/meminfo](#cat--proc--meminfo)
+* [lsblk](#lsblk)
+* [free -m](#free--m)
+
+#### cat /proc/cpuinfo
+Displays more information about CPU e.g model, model name, cores, vendor id
+```sh
+$ cat /proc/cpuinfo
+```
+
+#### cat /proc/meminfo
+Displays more information about CPU e.g model, model name, cores, vendor id
+```sh
+$ cat /proc/meminfo
+```
+
+#### lsblk
+Displays block devices related information
+```sh
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+vda    254:0    0 59.6G  0 disk 
+`-vda1 254:1    0 59.6G  0 part /etc/hosts
+```
+
+#### free -m
+Displays free and used memory in the system (-m flag indicates memory in MB)
+```sh
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           1985         211        1156         343         617        1291
+Swap:          1023           0        1023
 ```

@@ -19,9 +19,10 @@ docker pull ubuntu:latest
 #access into ubuntu
 docker run -ti ubuntu /bin/bash
 ```
-### 
+Groups of commands:
 * [System commands](#system-commands)
 * [Hardware commands](#hardware-commands)
+* [Users commands](#users-commands)
 
 ### System commands
 Now we are going to learn some commands of linux system
@@ -118,4 +119,49 @@ $ free -m
               total        used        free      shared  buff/cache   available
 Mem:           1985         211        1156         343         617        1291
 Swap:          1023           0        1023
+```
+
+### Users commands
+
+* [id](#id)
+* [last](#last)
+* [groupadd "admin"](#groupadd--admin-)
+* [adduser "nameuser"](#adduser--nameuser-)
+* [userdel "nameuser"](#userdel--nameuser-)
+* [usermod] (#usermod)
+
+#### id
+Displays the details of the active user e.g. uid, gid, and groups
+```sh
+$ id
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+#### last
+Shows the last logins in the system
+```sh
+$ last
+wtmp begins Mon Jan 17 15:20:01 2022
+```
+
+#### groupadd "admin"
+Adds the group 'admin'
+```sh
+$ cat /etc/group 
+$ groupadd "admin"
+$ cat /etc/group
+```
+
+#### userdel "Sam"
+Deletes user Sam
+```sh
+$ cat /etc/passwd
+$ userdel "Sam"
+$ cat /etc/passwd
+```
+
+#### usermod
+Used for changing / modifying user information
+```sh
+$ usermod
 ```

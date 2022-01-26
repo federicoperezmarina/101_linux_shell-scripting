@@ -23,6 +23,7 @@ Groups of commands:
 * [System commands](#system-commands)
 * [Hardware commands](#hardware-commands)
 * [Users commands](#users-commands)
+* [File commands](#file-commands)
 
 ### System commands
 Now we are going to learn some commands of linux system
@@ -152,7 +153,15 @@ $ groupadd "admin"
 $ cat /etc/group
 ```
 
-#### userdel "Sam"
+#### adduser "nameuser"
+add user Sam
+```sh
+$ cat /etc/passwd
+$ adduser "Sam"
+$ cat /etc/passwd
+```
+
+#### userdel "nameuser"
 Deletes user Sam
 ```sh
 $ cat /etc/passwd
@@ -164,4 +173,89 @@ $ cat /etc/passwd
 Used for changing / modifying user information
 ```sh
 $ usermod
+```
+
+### File commands
+
+* [ls](#ls)
+* [pwd](#pwd)
+* [mkdir](#mkdir)
+* [rm](#rm)
+* [cp](#cp)
+* [mv](#mv)
+* [touch](#touch) 
+* [more](#more)
+* [head](#head)
+* [tail](#tail)
+* [wc](#wc)
+
+#### ls
+Lists files - both regular &  hidden files and their permissions as well.
+```sh
+$ ls
+```
+
+#### pwd
+Displays the current directory file path
+```sh
+$ pwd 
+/tmp
+```
+
+#### mkdir
+Creates a new directory
+```sh
+$ mkdir
+```
+
+#### rm
+Removes files or directories
+```sh
+$ rm filename
+$ rm -f filename
+$ rm -r directory_name
+$ rm -rf directory_name
+```
+
+#### cp
+Copies files or directories
+```sh
+$ cp file1 file2
+$ cp -r dir1 dir2
+```
+
+#### mv
+Renames file1 to file2
+```sh
+$ mv file1 file2
+```
+
+#### touch
+Creates a new file
+```sh
+$ touch filename
+```
+
+#### more
+Outputs the contents of a file
+```sh
+$ more filename
+```
+
+#### head
+Displays the first 10 lines of a file
+```sh
+$ head filename
+```
+
+#### tail
+Displays the last 10 lines of a file
+```sh
+$ tail filename
+```
+
+#### wc
+Prints the number of bytes, words and lines in a file
+```sh
+$ wc filename
 ```

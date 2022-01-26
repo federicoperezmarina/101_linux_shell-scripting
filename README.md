@@ -128,7 +128,7 @@ Swap:          1023           0        1023
 * [groupadd "admin"](#groupadd--admin-)
 * [adduser "nameuser"](#adduser--nameuser-)
 * [userdel "nameuser"](#userdel--nameuser-)
-* [usermod] (#usermod)
+* [usermod](#usermod)
 
 #### id
 Displays the details of the active user e.g. uid, gid, and groups

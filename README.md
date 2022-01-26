@@ -19,11 +19,14 @@ docker pull ubuntu:latest
 #access into ubuntu
 docker run -ti ubuntu /bin/bash
 ```
-Groups of commands:
+### Groups of commands:
 * [System commands](#system-commands)
 * [Hardware commands](#hardware-commands)
 * [Users commands](#users-commands)
 * [File commands](#file-commands)
+* [Process commands](#process-commands)
+* [File permission commands](#file-permission-commands)
+
 
 ### System commands
 Now we are going to learn some commands of linux system
@@ -258,4 +261,49 @@ $ tail filename
 Prints the number of bytes, words and lines in a file
 ```sh
 $ wc filename
+```
+
+### Process commands
+
+* [ps](#ps)
+* [top](#top)
+* [kill](#kill)
+
+#### ps
+Display currently active processes
+```sh
+$ ps
+  PID TTY          TIME CMD
+    1 pts/0    00:00:00 bash
+   97 pts/0    00:00:00 ps
+```
+
+#### top
+Displays all running processes
+```sh
+$ top
+```
+
+#### kill
+Terminates process with a given pid
+```sh
+$ kill pid
+```
+
+### File permission commands
+
+* [chmod](#chmod)
+* [chown](#chown)
+
+#### chmod
+Change file permissions
+```sh
+$ chmod octal filename
+$ chmod 777 filename
+```
+
+#### chown
+Change ownership of the file
+```sh
+$ chown owner filename
 ```

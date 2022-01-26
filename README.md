@@ -26,6 +26,7 @@ docker run -ti ubuntu /bin/bash
 * [File commands](#file-commands)
 * [Process commands](#process-commands)
 * [File permission commands](#file-permission-commands)
+* [Network commands](#network-commands)
 
 
 ### System commands
@@ -306,4 +307,50 @@ $ chmod 777 filename
 Change ownership of the file
 ```sh
 $ chown owner filename
+```
+
+### Network commands
+
+* [ifconfig ](#ifconfig)
+* [ping](#ping)
+* [whois](#whois)
+* [dig](#dig)
+* [host](#host)
+* [wget](#wget)
+* [netstat](#netstat)
+
+#### ifconfig 
+Displays IP addresses of all network interfaces
+```sh
+$ ifconfig
+```
+
+#### ping 
+ping command sends an ICMP echo request to establish a connection to server / PC
+```sh
+$ ping www.marca.com
+```
+
+#### whois
+Retrieves more information about a domain name
+```sh
+$ whois marca.com
+```
+
+#### dig
+Retrieves DNS information about the domain
+```sh
+$ dig marca.com
+```
+
+#### wget
+Downloads a file from an online source
+```sh
+$ wget filename
+```
+
+#### netstat
+Displays all active listening ports
+```sh
+$ netstat
 ```

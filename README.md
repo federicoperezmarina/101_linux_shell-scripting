@@ -23,13 +23,19 @@ docker run -ti ubuntu /bin/bash
 ### System
 Now we are going to learn some commands of linux system
 
-#### Table of Contents
-
 * [uname](#uname)
+* [uname -r](#uname-r)
 
 #### uname
- Displays  Linux system information
+Displays  Linux system information
 ```sh
 $ uname
 Linux
+```
+
+#### uname -r
+Displays  kernel release information
+```sh
+$ uname -r
+5.10.47-linuxkit
 ```

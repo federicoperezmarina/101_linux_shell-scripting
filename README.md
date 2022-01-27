@@ -30,6 +30,7 @@ docker run -ti ubuntu /bin/bash
 * [Compression/Archives commands](#compressionarchives-commands)
 * [Search commands](#search-commands)
 * [Disk usage commands](#disk-usage-commands)
+* [File transfer commands](#file-transfer-commands)
 
 
 ### System commands
@@ -426,4 +427,21 @@ $ du -sh
 Mount a device
 ```sh
 $ mount device-path mount-point
+```
+
+### File transfer commands
+
+* [scp](#scp)
+* [rsync](#rsync)
+
+#### scp 
+Securely copy file1.txt to server2 in /tmp directory
+```sh
+$ scp file1.txt server2/tmp  
+```
+
+#### rsync 
+Synchronize contents in /home/apps directory with /backup  directory
+```sh
+$rsync -a /home/apps  /backup/ 
 ```

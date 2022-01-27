@@ -4,6 +4,7 @@ This is a repository to learn how to use linux commands in shell &amp; how to cr
 ## Table of Contents
 
 * [Linux Commands](#linux-commands)
+* [Linux Pipelines](#linux-pipelines)
 * [Linux Shell Scripts](#linux-shell-scripts)
 
 ## Linux Commands
@@ -444,4 +445,29 @@ $ scp file1.txt server2/tmp
 Synchronize contents in /home/apps directory with /backup  directory
 ```sh
 $rsync -a /home/apps  /backup/ 
+```
+
+## Linux Pipelines
+In this section we are going to learn about pipelines in linux. A pipeline is a concatenation of linux commands with the symbol |
+
+
+Next we will show some examples:
+```sh
+# searching cat in the history commands log
+$ history | grep cat
+
+# count how many times we can find in the history commands log
+$ history | grep cat | wc -l
+
+# sort the data of a file
+$ cat file.txt | sort
+
+# sort and find unique items in a file
+$ cat file.txt | sort | uniq
+
+# sort, find and save the items into a file
+$ cat file.txt | sort | uniq > file2.txt
+
+# display the process id of systemd
+$ ps –ef | grep systemd | awk ‘{print $2}’
 ```

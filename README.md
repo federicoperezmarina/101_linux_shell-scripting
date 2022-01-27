@@ -27,7 +27,8 @@ docker run -ti ubuntu /bin/bash
 * [Process commands](#process-commands)
 * [File permission commands](#file-permission-commands)
 * [Network commands](#network-commands)
-* [Compression/Archives commands](#compression-archives-commands)
+* [Compression/Archives commands](#compressionarchives-commands)
+* [Search commands](#search-commands)
 
 
 ### System commands
@@ -362,7 +363,7 @@ $ netstat
 * [gzip](#gzip)
 
 #### tar 
-Creates, extract and gzipped tar files
+Creates, extract and gzip tar files
 ```sh
 $ tar -cf home.tar home<:code>
 $ tar -xf files.tar
@@ -373,4 +374,23 @@ $ tar -zcvf home.tar.gz source-folder
 Compression a file with .gz extension
 ```sh
 $ gzip file
+```
+
+### Search commands
+
+* [grep](#grep)
+* [find](#gzip)
+
+#### grep 
+Search for a given pattern
+```sh
+$ grep 'pattern' files
+$ grep -r pattern dir  
+```
+
+#### find 
+Find file given some parameters
+```sh
+$ find /home/ -name "index" 
+$ find /home -size +10000k
 ```

@@ -477,7 +477,7 @@ $ ps –ef | grep systemd | awk ‘{print $2}’
 A shell script is a text file that contains a sequence of commands for a UNIX-based operating system. It is called a shell script because it combines a sequence of commands, that would otherwise have to be typed into the keyboard one at a time, into a single script.
 
 ### Examples of shell scripts
-[01_shell_script](01_shell_script.sh) 
-[02_hello_world](02_hello_world.sh) 
-[03_echo](03_echo.sh) 
-[04_comment](04_comment.sh) 
+* [01_shell_script.sh](01_shell_script.sh) 
+* [02_hello_world.sh](02_hello_world.sh) 
+* [03_echo.sh](03_echo.sh) 
+* [04_comment.sh](04_comment.sh) 

@@ -27,6 +27,7 @@ docker run -ti ubuntu /bin/bash
 * [Process commands](#process-commands)
 * [File permission commands](#file-permission-commands)
 * [Network commands](#network-commands)
+* [Compression/Archives commands](#compression-archives-commands)
 
 
 ### System commands
@@ -353,4 +354,23 @@ $ wget filename
 Displays all active listening ports
 ```sh
 $ netstat
+```
+
+### Compression/Archives commands
+
+* [tar](#)
+* [gzip](#gzip)
+
+#### tar 
+Creates, extract and gzipped tar files
+```sh
+$ tar -cf home.tar home<:code>
+$ tar -xf files.tar
+$ tar -zcvf home.tar.gz source-folder
+```
+
+#### gzip 
+Compression a file with .gz extension
+```sh
+$ gzip file
 ```

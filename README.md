@@ -29,6 +29,7 @@ docker run -ti ubuntu /bin/bash
 * [Network commands](#network-commands)
 * [Compression/Archives commands](#compressionarchives-commands)
 * [Search commands](#search-commands)
+* [Disk usage commands](#disk-usage-commands)
 
 
 ### System commands
@@ -393,4 +394,36 @@ Find file given some parameters
 ```sh
 $ find /home/ -name "index" 
 $ find /home -size +10000k
+```
+
+### Disk Usage commands
+
+* [df](#df)
+* [fdisk](#fdisk)
+* [du](#du)
+* [mount](#mount)
+
+#### df 
+Display free space on mounted systems & displays free inodes on filesystems
+```sh
+$ df -h
+$ df -i  
+```
+
+#### fdisk 
+Shows disk partitions, sizes, and types
+```sh
+$ fdisk -l
+```
+
+#### du 
+Displays disk usage in the current directory in a human-readable 
+```sh
+$ du -sh
+```
+
+#### mount 
+Mount a device
+```sh
+$ mount device-path mount-point
 ```

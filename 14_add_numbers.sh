@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Enter first number"
 read x
 echo "Enter second number"

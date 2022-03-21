@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo “Wait for 5 seconds”
 sleep 5

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 function greeting() {
 
 str="Hello, $name"

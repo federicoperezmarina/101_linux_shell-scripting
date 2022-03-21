@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 function F1()
 {
 echo 'I like bash programming'

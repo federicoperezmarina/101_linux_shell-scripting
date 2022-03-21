@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Enter any number"
 read n

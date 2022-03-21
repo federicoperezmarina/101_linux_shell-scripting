@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 valid=true
 count=1
 while [ $valid ]

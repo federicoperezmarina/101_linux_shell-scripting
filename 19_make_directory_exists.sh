@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Enter directory name"
 read ndir
 if [ -d "$ndir" ]

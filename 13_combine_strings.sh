@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 string1="Linux"
 string2="Hint"

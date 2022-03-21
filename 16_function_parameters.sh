@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 Rectangle_Area() {
 area=$(($1 * $2))

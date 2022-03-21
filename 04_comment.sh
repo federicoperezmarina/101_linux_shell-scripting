@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Add two numeric value
 ((sum=25+35))
